@@ -8,11 +8,12 @@ The app, named 'Shudong' (directly translated as 'Tree Hole'), refers to a conce
 1. Spring Boot
 2. vue
 3. MySQL
+4. Docker
 
 ## Deploy
 ### Note
 1. The WeChat Mini Program Account: ```树洞撑了把伞```
-2. The server IP address: ```34.41.117.214```
+2. The server IP address: ```35.226.228.78```
 
 ### Front-end: ```WeChat Mini Program```
 1. set up the server address
@@ -21,9 +22,10 @@ The app, named 'Shudong' (directly translated as 'Tree Hole'), refers to a conce
 4. then you can scan the QR code with WeChat to request access permission
 
 ### Back-end: ```Google Cloud```
-1. upload ```shudong.war```
-1. run ```nohup java -jar shudong.war &```
-2. check using ```lsof -i:8082```
+1. Install MySQL / Docker
+2. run ```sudo docker pull lyuanzhi/shudongback:v1```
+3. run ```docker run -d -p 8082:8082 lyuanzhi/shudongback:v1```
+4. check using ```lsof -i:8082```
 
 ### Demo Screenshots
 ![](imgs/demo.png)
