@@ -13,7 +13,7 @@ The app, named 'Shudong' (directly translated as 'Tree Hole'), refers to a conce
 ## Deploy
 ### Note
 1. The WeChat Mini Program Account: ```树洞撑了把伞```
-2. The server IP address: ```35.226.228.78```
+2. The server IP address: ```35.238.239.226```
 
 ### Front-end: ```WeChat Mini Program```
 1. set up the server address
