@@ -3,9 +3,7 @@ RUN USER=root mkdir shudongBack
 WORKDIR /shudongBack
 COPY . .
 RUN mvn clean package
-RUN ls ./demo-controller
-RUN ls ./demo-controller/target
 # Final stage
 FROM openjdk:8-jdk-slim
-COPY --from=builder /shudongBack/demo-controller/target/shudong.war .
+COPY --from=builder /shudongBack/demo-controller/target/demo-controller-0.0.1-SNAPSHOT.war ./shudong.war
 CMD ["java", "-jar", "shudong.war"]
